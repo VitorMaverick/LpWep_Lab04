@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex flex-column align-items-center">
         <form class="form mt-5" id="form">
 
             <div class="input-group input-group-sm mr-3">
@@ -30,16 +30,16 @@
                     <span class="input-group-text">Bebidas:</span>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadio1" name="suco" class="custom-control-input bebidas" value="4">
-                    <label class="custom-control-label " for="customRadio1">Suco</label>
+                    <input type="radio" id="suco" name="customRadio" class="custom-control-input bebidas" value="4">
+                    <label class="custom-control-label " for="suco">Suco</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadio2" name="refri" class="custom-control-input bebidas" value="2.5">
-                    <label class="custom-control-label " for="customRadio2">Refrigerante</label>
+                    <input type="radio" id="refrigerante" name="customRadio" class="custom-control-input bebidas" value="2.5">
+                    <label class="custom-control-label " for="refrigerante">Refrigerante</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadio3" name="agua" class="custom-control-input bebidas" value="1.5">
-                    <label class="custom-control-label" for="customRadio3">Água</label>
+                    <input type="radio" id="agua" name="customRadio" class="custom-control-input bebidas" value="1.5">
+                    <label class="custom-control-label" for="agua">Água</label>
                 </div>
             </div>
 
@@ -62,9 +62,10 @@
             </div>
             
             <button id="btnForm" class="btn btn-primary" type="submit">Finalizar</button>
+            <button id="btnLimpa" class="btn btn-secondary" type="reset" value="Reset">Limpar formulário</button>
         </form>
        
-        <p id="js-resultado"></p>
+        <div id="js-resultado" class="mt-3"></div>
     </div>
 
     <script src="js/calcula-pedido.js"></script>
